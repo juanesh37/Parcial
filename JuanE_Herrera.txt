@@ -1,5 +1,5 @@
 plsql.execute <<-SQL
-CREATE TABLESPACE "mid_term" DATAFILE 'C:\Parcial1\juan_herrera.dbf' SIZE 25M ONLINE
+CREATE TABLESPACE "mid_term" DATAFILE 'C:\Parcial1\juanes_herrera.dbf' SIZE 25M ONLINE
 SQL
 
 plsql.execute <<-SQL
