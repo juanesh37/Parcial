@@ -1,0 +1,17 @@
+plsql.execute <<-SQL
+CREATE TABLESPACE "mid_term" DATAFILE 'C:\Parcial1\juan_herrera.dbf' SIZE 25M ONLINE
+SQL
+
+plsql.execute <<-SQL
+CREATE PROFILE exam LIMIT 
+ FAILED_LOGIN_ATTEMPTS 4
+ IDLE_TIME 30
+SQL
+
+plsql.execute <<-SQL  
+CREATE USER "ejercicios" 
+PROFILE "exam" 
+IDENTIFIED BY "6880" 
+DEFAULT TABLESPACE "mid_term"
+QUOTA 10M ON "mid_term"
+SQL
